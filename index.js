@@ -19,6 +19,7 @@ app.use(userRoutes);
 const posterRoutes = require("./routes/offer");
 app.use(posterRoutes);
 const offersRoutes = require("./routes/offers");
+const res = require("express/lib/response");
 app.use(offersRoutes);
 
 app.all("*", (req, res) => {
